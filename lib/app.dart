@@ -4,6 +4,7 @@ import 'package:fluttertask10623/blocs/auth/auth_bloc.dart';
 import 'package:fluttertask10623/screens/home/home_screen.dart';
 import 'package:fluttertask10623/screens/login/login_screen.dart';
 import 'package:fluttertask10623/screens/registration/registration_screen.dart';
+import 'package:fluttertask10623/screens/user_details/user_details_screen.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -28,6 +29,7 @@ class App extends StatelessWidget {
         '/home': (context) => const HomeScreen(),
         '/login': (context) => const LoginScreen(),
         '/register': (context) => const RegistrationScreen(),
+        '/user_details': (context) => const UserDetailsScreen(),
       }
     );
   }
