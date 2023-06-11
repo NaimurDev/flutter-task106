@@ -11,3 +11,9 @@ class LoginEvent extends AuthEvent {
 }
 
 class LogoutEvent extends AuthEvent {}
+
+class RegisterEvent extends AuthEvent {
+  final Map<String, String> formData;
+
+  RegisterEvent(this.formData);
+}

@@ -14,7 +14,9 @@ class AuthenticatedAuthState extends AuthState {
 
 class FailureAuthState extends AuthState {
   final String? username;
+  final String? email;
   final String? password;
+  final String? password2;
   final String? errorMessage;
-  FailureAuthState({this.errorMessage, this.username, this.password});
+  FailureAuthState({this.errorMessage, this.username, this.password, this.password2, this.email});
 }

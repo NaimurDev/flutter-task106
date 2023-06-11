@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertask10623/blocs/auth/auth_bloc.dart';
 import 'package:fluttertask10623/screens/home/home_screen.dart';
 import 'package:fluttertask10623/screens/login/login_screen.dart';
+import 'package:fluttertask10623/screens/registration/registration_screen.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -22,7 +23,12 @@ class App extends StatelessWidget {
           }
           return const LoginScreen();
         },
-      )
+      ),
+      routes: {
+        '/home': (context) => const HomeScreen(),
+        '/login': (context) => const LoginScreen(),
+        '/register': (context) => const RegistrationScreen(),
+      }
     );
   }
 }
